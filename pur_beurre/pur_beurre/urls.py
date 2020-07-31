@@ -17,11 +17,17 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, re_path, include
 from substitute import views
+from product import views
+from category import views
+from user import views
 
 
 urlpatterns = [
     path('', include('substitute.urls')), #
-    path('substitute/', include('substitute.urls')), #
+    path('substitute/', include('substitute.urls')), 
+    path('product/', include('product.urls')), 
+    path('category/', include('category.urls')), 
+    path('user/', include('user.urls')), 
     path('admin/', admin.site.urls),
 ]
 
