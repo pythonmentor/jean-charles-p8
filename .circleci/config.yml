@@ -30,7 +30,7 @@ jobs:
             - '/usr/local/lib/python3.6/site-packages'
       - run:
           command: |
-            pipenv run python manage.py test
+            cd pur_beurre && pipenv run python manage.py test
 
 workflows:
   main:
