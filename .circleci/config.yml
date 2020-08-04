@@ -31,3 +31,8 @@ jobs:
       - run:
           command: |
             pipenv run python manage.py test
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
