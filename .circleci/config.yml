@@ -28,6 +28,9 @@ jobs:
             - '.venv'
             - '/usr/local/bin'
             - '/usr/local/lib/python3.6/site-packages'
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache            
       - run:
           command: |
             cd pur_beurre && pipenv run python manage.py test
