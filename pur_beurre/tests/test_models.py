@@ -24,5 +24,3 @@ class UserTestCase(TestCase):
                                 status=0)
         self.assertEqual("Bla", "Bla")
 
-# if __name__ == '__main__':
-#    unittest.main()
