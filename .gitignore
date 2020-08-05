@@ -6,3 +6,13 @@ pur_beurre/pur_beurre/__pycache__/*
 pur_beurre/substitute/__pycache__/*
 venv
 .idea
+pur_beurre/product/__pycache__/
+pur_beurre/product/migrations/__pycache__/0001_initial.cpython-36.pyc
+pur_beurre/product/migrations/__pycache__/0002_auto_20200803_2138.cpython-36.pyc
+pur_beurre/product/totest1.txt
+pur_beurre/substitute/migrations/__pycache__/0001_initial.cpython-36.pyc
+pur_beurre/tests/__pycache__/
+pur_beurre/user/__pycache__/
+pur_beurre/user/idee_pour_substitute.txt
+pur_beurre/user/migrations/__pycache__/0001_initial.cpython-36.pyc
+

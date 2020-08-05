@@ -2,3 +2,10 @@ status : [![CircleCI](https://circleci.com/gh/jean-charles-gibier/PurBeurre.svg?
 
 # PurBeurre
 Projet 8 DaPy
+
+installation:
+````
+pip install -r requirelents.txt
+export SECRET_KEY=`python -c 'import random, string; print("".join([random.choice(string.printable) for _ in range(24)]))'`
+
+````
