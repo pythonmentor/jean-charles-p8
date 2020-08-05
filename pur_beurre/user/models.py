@@ -13,6 +13,6 @@ class User(models.Model):
 
     def __str__(self):
         """ 
-        Cette méthode permet de definit l'entité category
+        Cette méthode permet d'afficher l'entité category
         """
-        return self.name
+        return self.first_name + ", " + self.last_name + ", " + str(self.status)
