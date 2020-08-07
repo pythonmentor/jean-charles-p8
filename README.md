@@ -3,7 +3,13 @@ status : [![CircleCI](https://circleci.com/gh/jean-charles-gibier/PurBeurre.svg?
 # PurBeurre
 Projet 8 DaPy
 
+ La société "Pur beurre" souhaite un site dont les exigences sont décrites dans 
+ [le document suivant :](https://openclassrooms.com/fr/paths/68/projects/159/assignment)
+
+
 installation:
+Git clone de ce projet + tests + migrations 
+
 ````
 pip install -r requirements.txt
 export SECRET_KEY=`python -c 'import random, string; print("".join([random.choice(string.printable) for _ in range(24)]))'`
