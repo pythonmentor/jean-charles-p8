@@ -3,11 +3,12 @@ from django.db import models
 
 class Product(models.Model):
     code = models.CharField(max_length=100)
-    name = models.CharField(max_length=100)
-    generic_name = models.CharField(max_length=100)
+    name = models.CharField(max_length=300)
+    generic_name = models.CharField(max_length=200)
     brands = models.CharField(max_length=100)
     stores = models.CharField(max_length=100)
     url = models.URLField()
+    nutrition_grade = models.CharField(max_length=2)
     categories = models.ManyToManyField('Category', related_name='products')
 
     
