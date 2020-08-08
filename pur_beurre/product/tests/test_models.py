@@ -4,26 +4,24 @@ from django.test import TestCase
 from product import models as prd
 
 
-
 class ProductTestCase(TestCase):
     def setUp(self):
-#        prd.Product.objects.create(
-#            code='0000000000001',
-#            name='product 001',
-#            generic_name='product prd 001',
-#            brands='Brand of prd 001',
-#            stores='stores001',
-#            url='url001')
+        prd.Product.objects.create(
+            code='0000000000001',
+            name='product 001',
+            generic_name='product prd 001',
+            brands='Brand of prd 001',
+            stores='stores001',
+            url='url001')
 
-#        prd.Product.objects.create(
-#            code='0000000000002',
-#            name='product 002',
-#            generic_name='product prd 002',
-#            brands='Brand of prd 002',
-#            stores='stores002',
-#            url='url002')
+        prd.Product.objects.create(
+            code='0000000000002',
+            name='product 002',
+            generic_name='product prd 002',
+            brands='Brand of prd 002',
+            stores='stores002',
+            url='url002')
 
-        pass
 
     def test_products_are_products(self):
         """Products are correctly identified"""
