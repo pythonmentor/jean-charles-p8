@@ -27,25 +27,24 @@ class ProductTestCase(TestCase):
 
     def test_products_are_products(self):
         """Products are correctly identified"""
-#        prd1 = prd.Product.objects.get(
-#            code='0000000000001',
-#            name='product 001',
-#            generic_name='product prd 001',
-#            brands='Brand of prd 001',
-#            stores='stores001',
-#            url='url001')
-#        prd2 = prd.Product.objects.get(
-#            code='0000000000002',
-#            name='product 002',
-#            generic_name='product prd 002',
-#            brands='Brand of prd 002',
-#            stores='stores002',
-#            url='url002')
+        prd1 = prd.Product.objects.get(
+            code='0000000000001',
+            name='product 001',
+            generic_name='product prd 001',
+            brands='Brand of prd 001',
+            stores='stores001',
+            url='url001')
+        prd2 = prd.Product.objects.get(
+            code='0000000000002',
+            name='product 002',
+            generic_name='product prd 002',
+            brands='Brand of prd 002',
+            stores='stores002',
+            url='url002')
 
-#        self.assertEqual(prd1.code, '0000000000001')
-#        self.assertEqual(prd2.code, '0000000000002')
+        self.assertEqual(prd1.code, '0000000000001')
+        self.assertEqual(prd2.code, '0000000000002')
 
-        pass
 
 class CategoryTestCase(TestCase):
     def setUp(self):
