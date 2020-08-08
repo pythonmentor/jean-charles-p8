@@ -49,29 +49,26 @@ class ProductTestCase(TestCase):
 
 class CategoryTestCase(TestCase):
     def setUp(self):
-#        prd.Category.objects.create(
-#            tag='tg0001',
-#            name='category 001',
-#            url='url001')
+        prd.Category.objects.create(
+            tag='tg0001',
+            name='category 001',
+            url='url001')
 
-#        prd.Category.objects.create(
-#            tag='tg0002',
-#            name='category 002',
-#            url='url002')
-        pass
+        prd.Category.objects.create(
+            tag='tg0002',
+            name='category 002',
+            url='url002')
 
     def test_categories_are_categories(self):
         """categories are correctly identified"""
-#        cat1 = prd.Category.objects.get(
-#            tag='tg0001',
-#            name='category 001',
-#            url='url001')
-#        cat2 = prd.Category.objects.get(
-#            tag='tg0002',
-#            name='category 002',
-#            url='url002')
+        cat1 = prd.Category.objects.get(
+            tag='tg0001',
+            name='category 001',
+            url='url001')
+        cat2 = prd.Category.objects.get(
+            tag='tg0002',
+            name='category 002',
+            url='url002')
 
-#        self.assertEqual(cat1.tag, 'tg0001')
-#        self.assertEqual(cat2.tag, 'tg0002')
-
-        pass
+        self.assertEqual(cat1.tag, 'tg0001')
+        self.assertEqual(cat2.tag, 'tg0002')
