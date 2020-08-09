@@ -28,7 +28,10 @@ if 'SECRET_KEY' in os.environ:
 ALLOWED_HOSTS = []
 # SECURITY WARNING: don't run with debug turned on in production!
 if 'DEPLOY_ENVIRON' in os.environ and os.environ['DEPLOY_ENVIRON'] == 'PRODUCTION':
-    DEBUG = False
+    if 'FORCE_DEBUG' in os.environ and os.environ['FORCE_DEBUG'] == 'YES':
+        DEBUG = True
+    else:
+        DEBUG = False
     ALLOWED_HOSTS = ['yapb.herokuapp.com']
 else:
     DEBUG = True
