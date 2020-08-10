@@ -10,3 +10,4 @@ pur_beurre/product/totest1.txt
 pur_beurre/user/idee_pour_substitute.txt
 migrations/
 *.pyc
+db.sqlite3
