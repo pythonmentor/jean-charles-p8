@@ -15,7 +15,7 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print("BASE_DIR :: {}".format(BASE_DIR))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -148,7 +148,7 @@ STATICFILES_DIRS = (
 )
 
 if 'DEPLOY_ENVIRON' in os.environ and os.environ['DEPLOY_ENVIRON'] == 'PRODUCTION':
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
     db_from_env = dj_database_url.config(conn_max_age=500)
     DATABASES['default'].update(db_from_env)
